@@ -1,0 +1,67 @@
+name: notepad_me
+description: Aplikasi catatan offline dengan tema buku yang elegan
+publish_to: 'none'
+version: 1.1.0+2
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  archive: ^3.3.7 
+
+  path: ^1.9.0
+
+  flutter_image_compress: ^2.3.0
+
+  home_widget: ^0.7.0
+
+  # Icons
+  cupertino_icons: ^1.0.8
+  
+  # Local Storage untuk menyimpan data
+  shared_preferences: ^2.3.3
+  
+  # Path provider untuk akses folder
+  path_provider: ^2.1.5
+  
+  # Untuk bekerja dengan file
+  file_picker: ^8.1.6
+  
+  # Untuk handle gambar
+  image_picker: ^1.1.2
+  
+  # UUID untuk generate ID unik
+  uuid: ^4.5.1
+  
+  # Intl untuk format tanggal
+  intl: ^0.20.1
+  
+  # Permission handler
+  permission_handler: ^11.3.1
+
+  # Untuk membuka file eksternal (PENTING!)
+  open_file: ^3.5.10
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.14.1
+  flutter_lints: ^5.0.0
+
+# Konfigurasi launcher icons (opsional)
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/notepadMe.png" 
+  min_sdk_android: 21
+
+flutter:
+  uses-material-design: true
+  
+  # Tambahkan assets jika diperlukan
+  # assets:
+  #   - assets/images/
+  #   - assets/icons/
